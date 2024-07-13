@@ -1,0 +1,14 @@
+CREATE TABLE `UserMcqData` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    questionTitle VARCHAR(255) NOT NULL,
+    questionOptions JSON NOT NULL,
+    questionCorrectOption VARCHAR(255) NOT NULL,
+    userSelectedAnswer VARCHAR(255),
+    subjectName VARCHAR(255),
+    topicName VARCHAR(255),
+    email VARCHAR(255),
+    interest VARCHAR(255),
+    isAnswerCorrect BOOLEAN,
+    questionId INT,
+    pageNumber INT
+);
